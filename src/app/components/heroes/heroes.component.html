@@ -8,7 +8,4 @@
   </li>
 </ul>
 
-<div *ngIf="selectedHero" id="selectedHeroDiv">
-  <h3>Selected Hero</h3>
-  <p>{{selectedHero.id}} {{selectedHero.name}}</p>
-</div>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
