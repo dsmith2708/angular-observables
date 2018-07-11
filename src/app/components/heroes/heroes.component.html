@@ -1,5 +1,17 @@
-<div>
-  {{hero.id}}
-  {{hero.name | uppercase}}
+
+
+<div *ngFor="let hero of heroes">
+  <h2>{{hero.id}}</h2>
+
+  <div>
+    <br />
+    <label for="id-input">ID: </label>
+    <input id="id-input" [(ngModel)]="hero.id" placeholder="id">
+    <br />
+    <label for="name-input">Name: </label>
+    <input id="name-input" [(ngModel)]="hero.name" placeholder="name">
+  </div>
+
 </div>
+
 
