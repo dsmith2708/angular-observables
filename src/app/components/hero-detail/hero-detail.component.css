@@ -28,3 +28,7 @@ label {
     color: #ccc;
     cursor: auto;
   }
+
+  #saveBtn {
+    margin-left: 8px;
+  }

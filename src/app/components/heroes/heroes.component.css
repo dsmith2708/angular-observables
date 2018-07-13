@@ -52,3 +52,28 @@
       position: absolute;
       left: 10%;
   }
+
+  .delete {
+    border: none;
+    background-color: rgb(185, 185, 185);
+    font-weight: bold;
+    float: right;
+    height: 100%;
+    width: auto;
+    border-radius: 0.5em;
+    color: black;
+    cursor: pointer;
+  }
+
+  .delete:hover {
+    background-color: #607D8B;
+    color: white;
+    font-weight: bolder;
+  }
+
+  a {
+    text-decoration: none;
+    color: #607D8B;
+    font-weight: bold;
+    width: 100%;
+  }
