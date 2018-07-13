@@ -53,11 +53,15 @@ export class HeroService {
   }
 
   deleteHero (hero: Hero | number): Observable<Hero> {
+    // ternary operator
     const id = typeof hero === 'number' ? hero : hero.id;
+
     const url = `${this.heroesUrl}/${id}`;
+
+    console.log('delete url: ' + url);
   
     return this.http.delete<Hero>(url, httpOptions).pipe(
-      tap(_ => this.log(`deleted hero id=${id}`)),
+      tap(() => this.log(`deleted hero id=${id}`)),
       catchError(this.handleError<Hero>('deleteHero'))
     );
   }
