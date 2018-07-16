@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../../classes/hero';
 import { HeroService } from '../../services/hero.service';
+import * as _ from 'lodash';
+
  
 @Component({
   selector: 'app-dashboard',
@@ -14,6 +16,7 @@ export class DashboardComponent implements OnInit {
  
   ngOnInit() {
     this.getHeroes();
+    console.log(_.defaults({ 'a': 1 }, { 'a': 3, 'b': 2 }));
   }
  
   getHeroes(): void {
